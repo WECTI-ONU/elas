@@ -14,6 +14,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class telacriarconta extends AppCompatActivity {
 
     @Override
@@ -65,6 +67,17 @@ public class telacriarconta extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        // Configuração do OnClickListener para o botão btnvoltar8
+        FloatingActionButton btnVoltarCadastro = findViewById(R.id.btnVoltarCadastro);
+        btnVoltarCadastro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(telacriarconta.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
         });
     }
 }
