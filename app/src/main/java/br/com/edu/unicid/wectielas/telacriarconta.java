@@ -2,11 +2,13 @@ package br.com.edu.unicid.wectielas;
 
 import android.content.Intent; // Importa a classe Intent
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View; // Importa a classe View
 import android.widget.Button; // Importa a classe Button
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch; // Importa a classe Switch
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +18,24 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class telacriarconta extends AppCompatActivity {
+
+    EditText edtNome1;
+    EditText edtCpf1;
+    EditText edtDataDeNascimento1;
+    EditText edtCep1;
+    EditText edtRua1;
+    EditText edtComplemento1;
+    EditText edtCidade1;
+    EditText edtNumero1;
+    EditText edtBairro1;
+    EditText edtEstado1;
+    EditText edtEmail1;
+    EditText edtSenha1;
+    EditText edtNomeSocial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,30 +43,31 @@ public class telacriarconta extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_telacriarconta);
 
-        EditText edtNome1 = findViewById(R.id.edtNome1);
-        EditText edtCpf1 = findViewById(R.id.edtCpf1);
-        EditText edtDataDeNascimento1 = findViewById(R.id.edtDataDeNascimento1);
-        EditText edtCep1 = findViewById(R.id.edtCep1);
-        EditText edtRua1 = findViewById(R.id.edtRua1);
-        EditText edtComplemento1 = findViewById(R.id.edtComplemento1);
-        EditText edtCidade1 = findViewById(R.id.edtCidade1);
-        EditText edtNumero1 = findViewById(R.id.edtNumero1);
-        EditText edtBairro1 = findViewById(R.id.edtBairro1);
-        EditText edtEstado1 = findViewById(R.id.edtEstado1);
-        EditText edtEmail1 = findViewById(R.id.edtEmail1);
-        EditText edtSenha1 = findViewById(R.id.edtSenha1);
+        edtNome1 = findViewById(R.id.edtNome1);
+        edtCpf1 = findViewById(R.id.edtCpf1);
+        edtDataDeNascimento1 = findViewById(R.id.edtDataDeNascimento1);
+        edtCep1 = findViewById(R.id.edtCep1);
+        edtRua1 = findViewById(R.id.edtRua1);
+        edtComplemento1 = findViewById(R.id.edtComplemento1);
+        edtCidade1 = findViewById(R.id.edtCidade1);
+        edtNumero1 = findViewById(R.id.edtNumero1);
+        edtBairro1 = findViewById(R.id.edtBairro1);
+        edtEstado1 = findViewById(R.id.edtEstado1);
+        edtEmail1 = findViewById(R.id.edtEmail1);
+        edtSenha1 = findViewById(R.id.edtSenha1);
+        edtNomeSocial = findViewById(R.id.edtNomeSocial);
 
+        //Deixa o EditText de Nome Social invisivel enquanto o switch estiver desmarcado
         Switch switchNomeSocial = findViewById(R.id.switchNomeSocial);
-        EditText myEditText = findViewById(R.id.edtNomeSocial);
-        myEditText.setVisibility(View.GONE);
+        edtNomeSocial.setVisibility(View.GONE);
 
         switchNomeSocial.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    myEditText.setVisibility(View.VISIBLE);
+                    edtNomeSocial.setVisibility(View.VISIBLE);
                 } else {
-                    myEditText.setVisibility(View.GONE);
+                    edtNomeSocial.setVisibility(View.GONE);
                 }
             }
         });
@@ -55,10 +75,15 @@ public class telacriarconta extends AppCompatActivity {
         // Configura o listener para o botão "Entrar"
         Button btnEntrar = findViewById(R.id.btnentrar); // Encontra o botão
         btnEntrar.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(View v) {
-                Intent intent = new Intent(telacriarconta.this, telaprincipal.class); // Altere para o nome da sua tela principal
-                startActivity(intent); // Inicie a nova Activity
+                if (validarCampos()) {
+                    // Todos os campos estão preenchidos, prosseguir com a ação
+                    Intent intent = new Intent(telacriarconta.this, telaprincipal.class);
+                    startActivity(intent);
+                } else {
+                    // Exibir mensagem de erro ou realizar outra ação
+                    Toast.makeText(telacriarconta.this, "Preencha todos os campos obrigatórios", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -79,5 +104,40 @@ public class telacriarconta extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    //Função que confere se os campos estão preenchidos
+    private boolean validarCampos() {
+        boolean camposValidos = true;
+
+        List<EditText> editTexts = new ArrayList<>();
+        editTexts.add(edtNome1);
+        editTexts.add(edtCpf1);
+        editTexts.add(edtDataDeNascimento1);
+        editTexts.add(edtCep1);
+        editTexts.add(edtRua1);
+        editTexts.add(edtComplemento1);
+        editTexts.add(edtCidade1);
+        editTexts.add(edtNumero1);
+        editTexts.add(edtBairro1);
+        editTexts.add(edtEstado1);
+        editTexts.add(edtEmail1);
+        editTexts.add(edtSenha1);
+
+        for (EditText editText : editTexts) {
+            if (editText != null && editText.getText().toString().trim().isEmpty()) {
+                // Campo inválido, exibe uma mensagem de erro
+                editText.setError("Campo obrigatório");
+                camposValidos = false;
+                break; // Se um campo estiver inválido, não precisa continuar verificando os outros
+            }
+        }
+
+        if (edtNomeSocial.getVisibility() == View.VISIBLE && edtNomeSocial.getText().toString().trim().isEmpty()) {
+            edtNomeSocial.setError("Campo obrigatório");
+            camposValidos = false;
+        }
+
+        return camposValidos;
     }
 }
