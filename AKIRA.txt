@@ -1,1 +1,5 @@
-30/10/2024 16:48 - Base do projeto lançado no GitHub
+30/10/2024
+- Lançado a base do projeto lançado no GitHub
+- Escurecer as letras da caixa do editText da tela de cadastro para maior visibilidade
+- Deletadas telas redundantes de cadastro
+- O botão de switch faz aparecer a EditText para colocar o nome social.
