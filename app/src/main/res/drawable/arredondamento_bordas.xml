@@ -4,6 +4,6 @@
     android:shape="rectangle">
 
     <corners android:radius="16dp" /> <!-- Altere o valor para o arredondamento desejado -->
-    <solid android:color="#E8DBFD" /> <!-- Cor de fundo -->
+    <solid android:color="#E6D9FB" /> <!-- Cor de fundo -->
 
 </shape>

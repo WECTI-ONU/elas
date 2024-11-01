@@ -99,7 +99,6 @@ public class telacriarconta extends AppCompatActivity {
         editTexts.add(edtDataDeNascimento1);
         editTexts.add(edtCep1);
         editTexts.add(edtRua1);
-        editTexts.add(edtComplemento1);
         editTexts.add(edtCidade1);
         editTexts.add(edtNumero1);
         editTexts.add(edtBairro1);
@@ -116,10 +115,6 @@ public class telacriarconta extends AppCompatActivity {
             }
         }
 
-        if (edtNomeSocial.getVisibility() == View.VISIBLE && edtNomeSocial.getText().toString().trim().isEmpty()) {
-            edtNomeSocial.setError("Campo obrigatório");
-            camposValidos = false;
-        }
 
         return camposValidos;
     }
