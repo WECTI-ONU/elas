@@ -2,4 +2,17 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- Cores principais -->
+    <color name="primaryColor">#6200EE</color> <!-- Cor roxa principal -->
+    <color name="primaryTextColor">#000000</color> <!-- Cor preta para texto principal -->
+
+    <!-- Cores secundárias -->
+    <color name="secondaryTextColor">#757575</color> <!-- Cor cinza para texto secundário -->
+
+    <!-- Cores adicionais -->
+    <color name="background_color">#F8F5FF</color>
+    <color name="title_background">#E8DBFD</color>
+    <color name="button_background">#D1B3FF</color>
+    <color name="button_text_color">#FFFFFF</color>
+
 </resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="#FFFFFF" /> <!-- Cor de fundo branca -->
+        <corners android:radius="8dp" /> <!-- Borda arredondada com 8dp de raio -->
+        <padding
+            android:left="8dp"
+            android:top="8dp"
+            android:right="8dp"
+            android:bottom="8dp" />
+        <stroke
+            android:width="1dp"
+            android:color="#E0E0E0" /> <!-- Borda fina cinza clara -->
+    </shape>
+
+</selector>
