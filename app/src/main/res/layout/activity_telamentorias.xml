@@ -2,39 +2,74 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/btneventos"
+    android:id="@+id/btneventos1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".telamentorias">
+    tools:context=".telamentorias"
+    tools:ignore="DuplicateIds">
 
-    <SearchView
-        android:layout_width="228dp"
-        android:layout_height="59dp"
-        android:background="@drawable/rounded_search_background"
-        android:padding="8dp"
-        app:iconifiedByDefault="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.251"
-        app:queryHint="Buscar..." />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btneventos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".telamentorias"
+        tools:ignore="DuplicateIds"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="37dp">
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="301dp"
-        android:layout_height="63dp"
-        android:background="#E8DBFD"
-        android:fontFamily="@font/adlam_display"
-        android:gravity="center"
-        android:text="Mentorias"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.131" />
+        <Button
+            android:id="@+id/btnConfirmarInscricao2"
+            android:layout_width="209dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="#E8DBFD"
+            android:fontFamily="@font/adlam_display"
+            android:text="Confirmar Inscrição"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMentorias"
+            android:layout_width="391dp"
+            android:layout_height="318dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnConfirmarInscricao2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView"
+            app:layout_constraintVertical_bias="0.393" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="323dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_search_background"
+            android:padding="8dp"
+            app:iconifiedByDefault="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            app:queryHint="Buscar..." />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="301dp"
+            android:layout_height="63dp"
+            android:background="#E8DBFD"
+            android:fontFamily="@font/adlam_display"
+            android:gravity="center"
+            android:text="Mentorias"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/notificacao5"
@@ -73,4 +108,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02"
         app:srcCompat="@drawable/elaspreto_removebg_preview" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
