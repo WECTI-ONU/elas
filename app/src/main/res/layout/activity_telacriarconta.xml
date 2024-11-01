@@ -211,7 +211,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.288"
             app:layout_constraintStart_toEndOf="@+id/textView20"
-            tools:layout_editor_absoluteY="372dp" />
+            tools:layout_editor_absoluteY="372dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView22"

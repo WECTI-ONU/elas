@@ -5,36 +5,41 @@
     android:id="@+id/btneventos"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9b75d0"
     tools:context=".telavagas">
 
     <SearchView
         android:layout_width="228dp"
-        android:layout_height="59dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/rounded_search_background"
         android:padding="8dp"
         app:iconifiedByDefault="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.251"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.027"
         app:queryHint="Buscar..." />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="301dp"
-        android:layout_height="63dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="32dp"
         android:background="#E8DBFD"
+        android:background="@drawable/arredondamento_bordas"
         android:fontFamily="@font/adlam_display"
         android:gravity="center"
         android:text="Vagas de Emprego"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.131" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/voltar7"

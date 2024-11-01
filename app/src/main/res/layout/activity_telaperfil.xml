@@ -32,7 +32,7 @@
             android:id="@+id/profileText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:fontFamily="@font/adlam_display"
             android:text="PERFIL"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
@@ -51,7 +51,7 @@
             android:id="@+id/nome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:fontFamily="@font/adlam_display"
             android:text="Nome Usuário"
             android:textAlignment="center"
             android:textColor="#C7C7C7"
@@ -61,6 +61,7 @@
             android:id="@+id/uploadButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/adlam_display"
             android:text="Alterar Imagem" />
 
     </LinearLayout>
@@ -133,7 +134,7 @@
             android:id="@+id/title3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:fontFamily="@font/adlam_display"
             android:text="E-MAIL"
             android:textColor="#666666"
             android:textSize="16sp" />
@@ -142,10 +143,10 @@
             android:id="@+id/emailTexto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:fontFamily="@font/adlam_display"
             android:text="usuarionomegmail.com"
             android:textColor="#4D4D4D"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <Space
             android:layout_width="match_parent"
@@ -155,7 +156,7 @@
             android:id="@+id/title3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:fontFamily="@font/adlam_display"
             android:text="TELEFONE"
             android:textColor="#666666"
             android:textSize="16sp" />
@@ -164,10 +165,10 @@
             android:id="@+id/telefoneTexto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:fontFamily="@font/adlam_display"
             android:text="123456789"
             android:textColor="#4D4D4D"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <Space
             android:layout_width="match_parent"
@@ -177,7 +178,7 @@
             android:id="@+id/title4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:fontFamily="@font/adlam_display"
             android:text="LINKEDIN"
             android:textColor="#666666"
             android:textSize="16sp" />
@@ -186,10 +187,10 @@
             android:id="@+id/telefoneTexto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:fontFamily="@font/adlam_display"
             android:text="/UsuarioNome"
             android:textColor="#4D4D4D"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <Space
             android:layout_width="match_parent"
@@ -199,7 +200,7 @@
             android:id="@+id/title4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:fontFamily="@font/adlam_display"
             android:text="TWITTER"
             android:textColor="#666666"
             android:textSize="16sp" />
@@ -208,10 +209,10 @@
             android:id="@+id/telefoneTexto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:fontFamily="@font/adlam_display"
             android:text="/UsuarioNome"
             android:textColor="#4D4D4D"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
