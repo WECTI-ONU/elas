@@ -1,0 +1,2 @@
+31/10/10 Adicionei Recycler Viewer a activity_telamentorias porem ao rodar o app está fechando o app alem do layout estar fora de ordem ao rodar no celular
+telamentorias - activity_inscricao_mentorias- mentoria.java - item_mentoria.xml - MentoriaAdapter - MentoriaViewHolder.java
