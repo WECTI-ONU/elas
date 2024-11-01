@@ -24,8 +24,9 @@ public class MentoriaAdapter extends RecyclerView.Adapter<MentoriaAdapter.Mentor
     }
 
     @NonNull
-    public MentoriaViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+    @Override
+    public MentoriaViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_mentoria, parent, false); // Replace with your layout file
+        return new MentoriaViewHolder(itemView);
     }
 
     @Override
