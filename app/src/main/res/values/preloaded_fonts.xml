@@ -3,5 +3,6 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/adlam_display</item>
         <item>@font/amita_bold</item>
+        <item>@font/amita_bold</item>
     </array>
 </resources>
