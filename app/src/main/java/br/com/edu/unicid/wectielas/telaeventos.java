@@ -35,14 +35,6 @@ public class telaeventos extends AppCompatActivity {
             }
         });
 
-        // Configuração do OnClickListener para o botão notificacao2
-        FloatingActionButton notificacao2 = findViewById(R.id.notificacao2);
-        notificacao2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(telaeventos.this, telanotificacao.class);
-                startActivity(intent);
-            }
-        });
+
     }
 }

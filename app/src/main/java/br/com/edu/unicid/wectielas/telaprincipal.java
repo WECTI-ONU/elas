@@ -25,17 +25,7 @@ public class telaprincipal extends AppCompatActivity {
             return insets;
         });
 
-        // Acessando o FloatingActionButton de notificações
-        FloatingActionButton notificacaoButton = findViewById(R.id.notificacao);
-
-        // Definindo o OnClickListener para abrir a tela de notificações
-        notificacaoButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(telaprincipal.this, telanotificacao.class);
-                startActivity(intent);
-            }
-        });
+       
 
         // Outros botões e configurações
         FloatingActionButton seuperfilButton = findViewById(R.id.seuperfil);

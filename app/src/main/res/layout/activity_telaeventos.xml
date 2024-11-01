@@ -36,19 +36,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.131" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/notificacao2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/image_removebg_preview" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="80dp"
