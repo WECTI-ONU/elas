@@ -11,7 +11,7 @@
         android:id="@+id/btneventos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF"
+        android:background="#9b75d0"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         tools:context=".MainActivity"
@@ -85,10 +85,10 @@
             android:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView2"
-            app:layout_constraintHorizontal_bias="0.376"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.04"
+            app:layout_constraintVertical_bias="0.028"
             app:srcCompat="@android:drawable/ic_menu_revert" />
 
         <TextView
@@ -98,13 +98,14 @@
             android:layout_marginTop="4dp"
             android:fontFamily="@font/adlam_display"
             android:text="Dados Pessoais"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.081"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/edtNome1"
             android:layout_width="350dp"
             android:layout_height="30dp"
             android:layout_marginStart="32dp"
@@ -120,7 +121,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/edtCpf1"
             android:layout_width="150dp"
             android:layout_height="30dp"
             android:layout_marginStart="32dp"
@@ -130,10 +131,10 @@
             android:gravity="center"
             android:hint="CPF"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            app:layout_constraintTop_toBottomOf="@+id/edtNome1" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/edtDataDeNascimento1"
             android:layout_width="160dp"
             android:layout_height="30dp"
             android:layout_marginTop="76dp"
@@ -144,7 +145,7 @@
             android:hint="Data de Nascimento"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintStart_toEndOf="@+id/edtCpf1"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <LinearLayout
@@ -156,21 +157,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.666"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView9">
+            app:layout_constraintTop_toBottomOf="@+id/edtCpf1">
 
             <RadioButton
                 android:id="@+id/radioMasculino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:text="Masculino" />
+                android:text="Masculino"
+                android:textColor="@color/black" />
 
             <RadioButton
                 android:id="@+id/radioFeminino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="Feminino" />
+                android:text="Feminino"
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <TextView
@@ -180,13 +183,14 @@
             android:layout_marginTop="12dp"
             android:fontFamily="@font/adlam_display"
             android:text="Endereço"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.09"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/edtDataDeNascimento1"
             android:layout_width="170dp"
             android:layout_height="30dp"
             android:layout_marginStart="32dp"
@@ -199,7 +203,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/edtNumero1"
             android:layout_width="110dp"
             android:layout_height="30dp"
             android:layout_marginStart="32dp"
@@ -210,12 +214,12 @@
             android:hint="Número"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.288"
-            app:layout_constraintStart_toEndOf="@+id/textView20"
-            tools:layout_editor_absoluteY="372dp"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintStart_toEndOf="@+id/edtDataDeNascimento1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="372dp" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/edtRua1"
             android:layout_width="170dp"
             android:layout_height="30dp"
             android:layout_marginStart="32dp"
@@ -225,10 +229,10 @@
             android:gravity="center"
             android:hint="Endereço"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+            app:layout_constraintTop_toBottomOf="@+id/edtDataDeNascimento1" />
 
         <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/edtBairro1"
             android:layout_width="110dp"
             android:layout_height="30dp"
             android:layout_marginStart="32dp"
@@ -240,11 +244,11 @@
             android:hint="Bairro"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.288"
-            app:layout_constraintStart_toEndOf="@+id/textView22"
-            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+            app:layout_constraintStart_toEndOf="@+id/edtRua1"
+            app:layout_constraintTop_toBottomOf="@+id/edtNumero1" />
 
         <TextView
-            android:id="@+id/textView25"
+            android:id="@+id/edtEstado1"
             android:layout_width="130dp"
             android:layout_height="30dp"
             android:layout_marginStart="32dp"
@@ -256,7 +260,7 @@
             app:layout_constraintEnd_toStartOf="@+id/textView26"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+            app:layout_constraintTop_toBottomOf="@+id/edtRua1" />
 
         <TextView
             android:id="@+id/textView26"
@@ -269,7 +273,7 @@
             android:gravity="center"
             android:hint="Cidade"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+            app:layout_constraintTop_toBottomOf="@+id/edtBairro1" />
 
         <TextView
             android:id="@+id/textView27"
@@ -278,13 +282,14 @@
             android:layout_marginTop="12dp"
             android:fontFamily="@font/adlam_display"
             android:text="Cadastro"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.09"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+            app:layout_constraintTop_toBottomOf="@+id/edtEstado1" />
 
         <TextView
-            android:id="@+id/textView28"
+            android:id="@+id/edtEmail1"
             android:layout_width="350dp"
             android:layout_height="30dp"
             android:layout_marginStart="32dp"
@@ -300,7 +305,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
         <TextView
-            android:id="@+id/textView29"
+            android:id="@+id/edtSenha1"
             android:layout_width="350dp"
             android:layout_height="30dp"
             android:layout_marginStart="32dp"
@@ -314,7 +319,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail1"
             app:layout_constraintVertical_bias="0.121" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,8 @@
 package br.com.edu.unicid.wectielas;
 
+import android.annotation.SuppressLint;
 import android.content.Intent; // Importa a classe Intent
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View; // Importa a classe View
 import android.widget.Button; // Importa a classe Button
 import android.widget.CompoundButton;
@@ -28,15 +28,15 @@ public class telacriarconta extends AppCompatActivity {
     EditText edtDataDeNascimento1;
     EditText edtCep1;
     EditText edtRua1;
-    EditText edtComplemento1;
     EditText edtCidade1;
     EditText edtNumero1;
     EditText edtBairro1;
     EditText edtEstado1;
     EditText edtEmail1;
     EditText edtSenha1;
-    EditText edtNomeSocial;
 
+
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,31 +46,14 @@ public class telacriarconta extends AppCompatActivity {
         edtNome1 = findViewById(R.id.edtNome1);
         edtCpf1 = findViewById(R.id.edtCpf1);
         edtDataDeNascimento1 = findViewById(R.id.edtDataDeNascimento1);
-        edtCep1 = findViewById(R.id.edtCep1);
+        edtCep1 = findViewById(R.id.edtDataDeNascimento1);
         edtRua1 = findViewById(R.id.edtRua1);
-        edtComplemento1 = findViewById(R.id.edtComplemento1);
         edtCidade1 = findViewById(R.id.edtCidade1);
         edtNumero1 = findViewById(R.id.edtNumero1);
         edtBairro1 = findViewById(R.id.edtBairro1);
         edtEstado1 = findViewById(R.id.edtEstado1);
         edtEmail1 = findViewById(R.id.edtEmail1);
         edtSenha1 = findViewById(R.id.edtSenha1);
-        edtNomeSocial = findViewById(R.id.edtNomeSocial);
-
-        //Deixa o EditText de Nome Social invisivel enquanto o switch estiver desmarcado
-        Switch switchNomeSocial = findViewById(R.id.switchNomeSocial);
-        edtNomeSocial.setVisibility(View.GONE);
-
-        switchNomeSocial.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    edtNomeSocial.setVisibility(View.VISIBLE);
-                } else {
-                    edtNomeSocial.setVisibility(View.GONE);
-                }
-            }
-        });
 
         // Configura o listener para o botão "Entrar"
         Button btnEntrar = findViewById(R.id.btnentrar); // Encontra o botão
