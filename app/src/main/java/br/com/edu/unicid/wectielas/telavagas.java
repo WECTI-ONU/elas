@@ -37,16 +37,6 @@ public class telavagas extends AppCompatActivity {
             }
         });
 
-        // Referência para o FloatingActionButton notificacao4
-        FloatingActionButton notificacao4 = findViewById(R.id.notificacao4);
 
-        // Definindo OnClickListener para iniciar a telanotificacao
-        notificacao4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(telavagas.this, telanotificacao.class);
-                startActivity(intent);
-            }
-        });
     }
 }

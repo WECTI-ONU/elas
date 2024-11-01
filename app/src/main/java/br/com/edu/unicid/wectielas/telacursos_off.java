@@ -36,16 +36,6 @@ public class telacursos_off extends AppCompatActivity {
             }
         });
 
-        // Referência ao botão de notificações
-        FloatingActionButton btnNotificacao2 = findViewById(R.id.btnnotificacao2);
-        btnNotificacao2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Intent para ir para a tela de notificações
-                Intent intent = new Intent(telacursos_off.this, telanotificacao.class);
-                startActivity(intent);
-                finish(); // Opcional: chama finish() para remover a tela atual da pilha
-            }
-        });
+
     }
 }
