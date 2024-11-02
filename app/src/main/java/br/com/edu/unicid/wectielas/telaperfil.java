@@ -29,6 +29,9 @@ public class telaperfil extends AppCompatActivity {
         profileImageView = findViewById(R.id.userProfile);
         uploadButton = findViewById(R.id.uploadButton);
 
+        //Colocando a foto do usuário como padrão
+        profileImageView.setImageResource(R.drawable.user);
+
         FloatingActionButton btnVoltarPerfil = findViewById(R.id.btnVoltarPerfil);
         btnVoltarPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
