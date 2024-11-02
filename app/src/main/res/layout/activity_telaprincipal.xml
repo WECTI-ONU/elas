@@ -5,7 +5,7 @@
     android:id="@+id/telaprincipal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/teladeFundo"
+    android:background="@drawable/teladefundo"
     tools:context=".telaprincipal">
 
     <ImageView

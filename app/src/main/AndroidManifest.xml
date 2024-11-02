@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <!-- Permissões para acessar a galeria e a câmera -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.CAMERA"/>
 
@@ -14,6 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ELAS"
         tools:targetApi="31">
+
         <activity android:name=".telacursos_off" android:exported="false"/>
         <activity android:name=".telaeventos" android:exported="false"/>
         <activity android:name=".telavagas" android:exported="false"/>
@@ -23,6 +28,9 @@
         <activity android:name=".telaprincipal" android:exported="false"/>
         <activity android:name=".telacriarconta" android:exported="false"/>
         <activity android:name=".telaLogin" android:exported="false"/>
+
+        <activity android:name=".MinhasMentorias" android:exported="false"/> <!-- Adicione esta linha -->
+
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

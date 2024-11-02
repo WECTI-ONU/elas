@@ -13,13 +13,13 @@ public class MentoriaViewHolder extends RecyclerView.ViewHolder {
 
     public MentoriaViewHolder(View itemView) {
         super(itemView);
-        textViewNome = itemView.findViewById(R.id.textView);
-        textViewEspecialidade = itemView.findViewById(R.id.tvEspecialidade);
-        textViewData = itemView.findViewById(R.id.textView);
-        textViewHorario = itemView.findViewById(R.id.tvHorario);
+        textViewNome = itemView.findViewById(R.id.tvNomeMentor); // Use o ID correto
+        textViewEspecialidade = itemView.findViewById(R.id.tvEspecialidade); // ID correto
+        textViewData = itemView.findViewById(R.id.tvData); // ID correto
+        textViewHorario = itemView.findViewById(R.id.tvHorario); // ID correto
     }
 
-    public void bind(final Mentoria mentoria, final MentoriaAdapter.OnMentoriaClickListener listener) {
+    public void bind(final Mentoria mentoria, final MentoriaAdapter.OnItemClickListener listener) {
         textViewNome.setText(mentoria.getNomeMedico());
         textViewEspecialidade.setText(mentoria.getEspecialidade());
         textViewData.setText(mentoria.getData());
@@ -28,9 +28,8 @@ public class MentoriaViewHolder extends RecyclerView.ViewHolder {
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listener.onMentoriaClick(mentoria);
+                listener.onItemClick(mentoria); // Chame o método correto do listener
             }
         });
     }
 }
-
