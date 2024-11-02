@@ -15,13 +15,11 @@
         android:theme="@style/Theme.ELAS"
         tools:targetApi="31">
         <activity android:name=".telacursos_off" android:exported="false"/>
-        <activity android:name=".telanotificacao" android:exported="false"/>
         <activity android:name=".telaeventos" android:exported="false"/>
         <activity android:name=".telavagas" android:exported="false"/>
         <activity android:name=".telamentorias" android:exported="false"/>
         <activity android:name=".telacursos" android:exported="false" android:theme="@style/Theme.ELAS"/>
         <activity android:name=".telaperfil" android:exported="false"/>
-        <activity android:name=".telacriarconta2" android:exported="false"/>
         <activity android:name=".telaprincipal" android:exported="false"/>
         <activity android:name=".telacriarconta" android:exported="false"/>
         <activity android:name=".telaLogin" android:exported="false"/>

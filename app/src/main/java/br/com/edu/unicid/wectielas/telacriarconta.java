@@ -3,6 +3,7 @@ package br.com.edu.unicid.wectielas;
 import android.annotation.SuppressLint;
 import android.content.Intent; // Importa a classe Intent
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View; // Importa a classe View
 import android.widget.Button; // Importa a classe Button
 import android.widget.EditText;
@@ -112,12 +113,13 @@ public class telacriarconta extends AppCompatActivity {
 
         for (EditText editText : editTexts) {
             if (editText != null && editText.getText().toString().trim().isEmpty()) {
-                // Campo inválido, exibe uma mensagem de erro
+                Log.d("Validation", "Campo vazio: " + editText.getId());
                 editText.setError("Campo obrigatório");
                 camposValidos = false;
-                break; // Se um campo estiver inválido, não precisa continuar verificando os outros
+                break;
             }
         }
+
 
 
         return camposValidos;
