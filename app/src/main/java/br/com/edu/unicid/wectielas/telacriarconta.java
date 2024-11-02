@@ -5,9 +5,7 @@ import android.content.Intent; // Importa a classe Intent
 import android.os.Bundle;
 import android.view.View; // Importa a classe View
 import android.widget.Button; // Importa a classe Button
-import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.Switch; // Importa a classe Switch
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -25,8 +23,8 @@ public class telacriarconta extends AppCompatActivity {
 
     EditText edtNome1;
     EditText edtCpf1;
-    EditText edtDataDeNascimento1;
-    EditText edtCep1;
+    EditText edtdataNasci1;
+    EditText edtcep1;
     EditText edtRua1;
     EditText edtCidade1;
     EditText edtNumero1;
@@ -34,9 +32,10 @@ public class telacriarconta extends AppCompatActivity {
     EditText edtEstado1;
     EditText edtEmail1;
     EditText edtSenha1;
+    EditText edtnomeSocial1;
 
 
-    @SuppressLint("WrongViewCast")
+    @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,8 +44,8 @@ public class telacriarconta extends AppCompatActivity {
 
         edtNome1 = findViewById(R.id.edtNome1);
         edtCpf1 = findViewById(R.id.edtCpf1);
-        edtDataDeNascimento1 = findViewById(R.id.edtDataDeNascimento1);
-        edtCep1 = findViewById(R.id.edtDataDeNascimento1);
+        edtdataNasci1 = findViewById(R.id.edtdataNasci1);
+        edtcep1 = findViewById(R.id.cep1);
         edtRua1 = findViewById(R.id.edtRua1);
         edtCidade1 = findViewById(R.id.edtCidade1);
         edtNumero1 = findViewById(R.id.edtNumero1);
@@ -54,6 +53,9 @@ public class telacriarconta extends AppCompatActivity {
         edtEstado1 = findViewById(R.id.edtEstado1);
         edtEmail1 = findViewById(R.id.edtEmail1);
         edtSenha1 = findViewById(R.id.edtSenha1);
+        edtnomeSocial1 = findViewById(R.id.edtnomeSocial1);
+
+
 
         // Configura o listener para o botão "Entrar"
         Button btnEntrar = findViewById(R.id.btnentrar); // Encontra o botão
@@ -89,6 +91,7 @@ public class telacriarconta extends AppCompatActivity {
         });
     }
 
+
     //Função que confere se os campos estão preenchidos
     private boolean validarCampos() {
         boolean camposValidos = true;
@@ -96,8 +99,8 @@ public class telacriarconta extends AppCompatActivity {
         List<EditText> editTexts = new ArrayList<>();
         editTexts.add(edtNome1);
         editTexts.add(edtCpf1);
-        editTexts.add(edtDataDeNascimento1);
-        editTexts.add(edtCep1);
+        editTexts.add(edtdataNasci1);
+        editTexts.add(edtcep1);
         editTexts.add(edtRua1);
         editTexts.add(edtCidade1);
         editTexts.add(edtNumero1);
@@ -105,6 +108,7 @@ public class telacriarconta extends AppCompatActivity {
         editTexts.add(edtEstado1);
         editTexts.add(edtEmail1);
         editTexts.add(edtSenha1);
+        editTexts.add(edtnomeSocial1);
 
         for (EditText editText : editTexts) {
             if (editText != null && editText.getText().toString().trim().isEmpty()) {
