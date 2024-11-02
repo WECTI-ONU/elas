@@ -66,6 +66,7 @@
         android:layout_width="127dp"
         android:layout_height="84dp"
         android:fontFamily="@font/adlam_display"
+        android:gravity="center"
         android:text="Eventos"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
