@@ -25,15 +25,16 @@ public class telacriarconta extends AppCompatActivity {
     EditText edtNome1;
     EditText edtCpf1;
     EditText edtdataNasci1;
-    EditText edtcep1;
-    EditText edtRua1;
-    EditText edtCidade1;
+    EditText edtCep1;
+    EditText edtEndereço1;
+    EditText edtCidade;
     EditText edtNumero1;
     EditText edtBairro1;
     EditText edtEstado1;
     EditText edtEmail1;
     EditText edtSenha1;
-    EditText edtnomeSocial1;
+    EditText edtNomeSocial1;
+    EditText edtGenero1;
 
 
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
@@ -46,17 +47,16 @@ public class telacriarconta extends AppCompatActivity {
         edtNome1 = findViewById(R.id.edtNome1);
         edtCpf1 = findViewById(R.id.edtCpf1);
         edtdataNasci1 = findViewById(R.id.edtdataNasci1);
-        edtcep1 = findViewById(R.id.cep1);
-        edtRua1 = findViewById(R.id.edtRua1);
-        edtCidade1 = findViewById(R.id.edtCidade1);
+        edtCep1 = findViewById(R.id.edtCep1);
+        edtEndereço1 = findViewById(R.id.edtEndereço1);
+        edtCidade = findViewById(R.id.edtCidade);
         edtNumero1 = findViewById(R.id.edtNumero1);
         edtBairro1 = findViewById(R.id.edtBairro1);
         edtEstado1 = findViewById(R.id.edtEstado1);
         edtEmail1 = findViewById(R.id.edtEmail1);
         edtSenha1 = findViewById(R.id.edtSenha1);
-        edtnomeSocial1 = findViewById(R.id.edtnomeSocial1);
-
-
+        edtNomeSocial1 = findViewById(R.id.edtNomeSocial1);
+        edtGenero1 = findViewById(R.id.edtGenero1);
 
         // Configura o listener para o botão "Entrar"
         Button btnEntrar = findViewById(R.id.btnentrar); // Encontra o botão
@@ -101,15 +101,18 @@ public class telacriarconta extends AppCompatActivity {
         editTexts.add(edtNome1);
         editTexts.add(edtCpf1);
         editTexts.add(edtdataNasci1);
-        editTexts.add(edtcep1);
-        editTexts.add(edtRua1);
-        editTexts.add(edtCidade1);
+        editTexts.add(edtNomeSocial1);
+        editTexts.add(edtGenero1);
+        editTexts.add(edtCep1);
+        editTexts.add(edtEndereço1);
+        editTexts.add(edtEstado1);
+        editTexts.add(edtCidade);
         editTexts.add(edtNumero1);
         editTexts.add(edtBairro1);
-        editTexts.add(edtEstado1);
         editTexts.add(edtEmail1);
         editTexts.add(edtSenha1);
-        editTexts.add(edtnomeSocial1);
+
+
 
         for (EditText editText : editTexts) {
             if (editText != null && editText.getText().toString().trim().isEmpty()) {
@@ -119,9 +122,6 @@ public class telacriarconta extends AppCompatActivity {
                 break;
             }
         }
-
-
-
         return camposValidos;
     }
 }
