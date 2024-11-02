@@ -54,6 +54,15 @@ public class telamentorias extends AppCompatActivity implements MentoriaAdapter.
                 confirmarInscricao();
             }
         });
+
+        FloatingActionButton btnVoltar = findViewById(R.id.btnvoltar6);
+        btnVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(telamentorias.this, telaprincipal.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
