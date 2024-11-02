@@ -5,7 +5,7 @@
     android:id="@+id/btneventos"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9b75d0"
+    android:background="#FFFFFF"
     tools:context=".telavagas">
 
     <SearchView
@@ -31,9 +31,9 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="92dp"
         android:layout_marginEnd="32dp"
+        android:background="@drawable/arredondamento_bordas"
         android:fontFamily="@font/adlam_display"
         android:gravity="center"
-        android:background="@drawable/arredondamento_bordas"
         android:text="Vagas de Emprego"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
