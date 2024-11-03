@@ -10,6 +10,163 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="429dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="65dp"
+                android:layout_height="237dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/emailIcon"
+                    android:layout_width="54dp"
+                    android:layout_height="47dp"
+                    android:paddingStart="16dp"
+                    app:srcCompat="@drawable/emailicon" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp" />
+
+                <ImageView
+                    android:id="@+id/iphoneIcon"
+                    android:layout_width="54dp"
+                    android:layout_height="47dp"
+                    android:paddingStart="16dp"
+                    app:srcCompat="@drawable/phoneicon" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp" />
+
+                <ImageView
+                    android:id="@+id/linkedinIcon"
+                    android:layout_width="54dp"
+                    android:layout_height="47dp"
+                    android:paddingStart="16dp"
+                    app:srcCompat="@drawable/linkedinicon" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <ImageView
+                    android:id="@+id/twitterIcon"
+                    android:layout_width="54dp"
+                    android:layout_height="47dp"
+                    android:paddingStart="16dp"
+                    app:srcCompat="@drawable/twittericon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="261dp"
+                android:layout_height="260dp"
+                android:orientation="vertical"
+                app:layout_constraintVertical_bias="0.3">
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adlam_display"
+                    android:text="E-MAIL"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/emailTexto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adlam_display"
+                    android:text="usuarionomegmail.com"
+                    android:textColor="#4D4D4D"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adlam_display"
+                    android:text="TELEFONE"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/telefoneTexto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adlam_display"
+                    android:text="123456789"
+                    android:textColor="#4D4D4D"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <TextView
+                    android:id="@+id/title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adlam_display"
+                    android:text="LINKEDIN"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/telefoneTexto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adlam_display"
+                    android:text="/UsuarioNome"
+                    android:textColor="#4D4D4D"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adlam_display"
+                    android:text="X"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/telefoneTexto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adlam_display"
+                    android:text="/UsuarioNome"
+                    android:textColor="#4D4D4D"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="412dp"
@@ -72,155 +229,6 @@
             android:fontFamily="@font/adlam_display"
             android:text="Alterar Imagem" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="59dp"
-        android:layout_height="248dp"
-        android:layout_marginStart="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.505">
-
-        <ImageView
-            android:id="@+id/emailIcon"
-            android:layout_width="54dp"
-            android:layout_height="47dp"
-            android:paddingStart="16dp"
-            app:srcCompat="@drawable/emailicon" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="21dp" />
-
-        <ImageView
-            android:id="@+id/iphoneIcon"
-            android:layout_width="54dp"
-            android:layout_height="47dp"
-            android:paddingStart="16dp"
-            app:srcCompat="@drawable/phoneicon" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="18dp" />
-
-        <ImageView
-            android:id="@+id/linkedinIcon"
-            android:layout_width="54dp"
-            android:layout_height="47dp"
-            android:paddingStart="16dp"
-            app:srcCompat="@drawable/linkedinicon" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="12dp" />
-
-        <ImageView
-            android:id="@+id/twitterIcon"
-            android:layout_width="54dp"
-            android:layout_height="47dp"
-            android:paddingStart="16dp"
-            app:srcCompat="@drawable/twittericon" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="261dp"
-        android:layout_height="260dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.325"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.728">
-
-        <TextView
-            android:id="@+id/title3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/adlam_display"
-            android:text="E-MAIL"
-            android:textColor="#666666"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/emailTexto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/adlam_display"
-            android:text="usuarionomegmail.com"
-            android:textColor="#4D4D4D"
-            android:textSize="20sp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="12dp" />
-
-        <TextView
-            android:id="@+id/title3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/adlam_display"
-            android:text="TELEFONE"
-            android:textColor="#666666"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/telefoneTexto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/adlam_display"
-            android:text="123456789"
-            android:textColor="#4D4D4D"
-            android:textSize="20sp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="12dp" />
-
-        <TextView
-            android:id="@+id/title4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/adlam_display"
-            android:text="LINKEDIN"
-            android:textColor="#666666"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/telefoneTexto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/adlam_display"
-            android:text="/UsuarioNome"
-            android:textColor="#4D4D4D"
-            android:textSize="20sp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
-
-        <TextView
-            android:id="@+id/title4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/adlam_display"
-            android:text="X"
-            android:textColor="#666666"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/telefoneTexto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/adlam_display"
-            android:text="/UsuarioNome"
-            android:textColor="#4D4D4D"
-            android:textSize="20sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <!-- Permissões para acessar a galeria e a câmera -->
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -29,7 +27,8 @@
         <activity android:name=".telacriarconta" android:exported="false"/>
         <activity android:name=".telaLogin" android:exported="false"/>
 
-        <activity android:name=".MinhasMentorias" android:exported="false"/> <!-- Adicione esta linha -->
+        <activity android:name=".MinhasMentorias" android:exported="false"/>
+        <activity android:name=".MeusEventos" android:exported="false"/> <!-- Adicionada esta linha -->
 
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
@@ -38,8 +37,6 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts" />
     </application>
 </manifest>

@@ -45,13 +45,14 @@
 
         <SearchView
             android:id="@+id/searchView"
-            android:layout_width="323dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
             android:background="@drawable/rounded_search_background"
             android:padding="8dp"
             app:iconifiedByDefault="false"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.209"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView15"
             app:queryHint="Buscar..." />
@@ -70,6 +71,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnMinhasEventos"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_search_background"
+            android:padding="8dp"
+            android:text="Meus Eventos"
+            app:iconifiedByDefault="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.797"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

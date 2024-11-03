@@ -3,3 +3,26 @@ Tela de enventos
 - eventos
 - cursos-palestras
 - Modo Lista
+
+Alterações 03/11
+
+- Foram alterados as seguintes classes e layout assim como este arquivo txt:
+ALterados: Eventos.java, EventosAdapter.java, telaeventos.java
+activity_telaeventos.xml, activity_telaperfil.xml, item_evento.xml
+
+Adicionado nova classe e novo layout:
+activity_inscricao_evento.xml -> Direciona para os eventos inscritos
+MeusEventos.java -> Trata as variaveis dos eventos inscritos
+
+Resumo Alterações realizadas:
+
+Acrescentado funcionalidade de CheckBox, ao selecionar a quantidade de eventos que deseja se inscrever e apertar no botão "Realizar inscrição"
+aparece a mensagem "Inscrição Realizada!" em seguida direciona para a tela "Meus Eventos" retornando os eventos selecionados anteriormente
+
+Alteraçõo na Tela de Perfil:
+
+Adicionado novos layouts para melhorar na organização e adaptabilidade das telas
+
+Alteração no AndroidMainifest.xml
+
+Adicionado as novas telas MinhaMentoria e MeusEventos
