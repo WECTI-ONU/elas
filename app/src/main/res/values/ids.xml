@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textViewNomeCurso" type="id" />
+    <item name="textViewEspecialidade" type="id" />
+    <item name="textViewData" type="id" />
+    <item name="textViewHorario" type="id" />
+    <item name="buttonConfirmarInscricao" type="id" />
+    <item name="buttonConfirmarCursos" type="id" />
+</resources>
